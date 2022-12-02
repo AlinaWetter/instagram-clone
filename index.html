@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="./html.js"></script>
+    <link rel="icon" type="image/png" href="#">
+</head>
+
+<body id="body" onload="createTaskBar(); createStoryBar(); createPosts(); renderRightSection();">
+
+    <div class="main-div">
+        <div class="left-section">
+            <img class="logo" src="./icon/logo.png" alt="">
+            <div class="task-bar" id="taskBar"></div>
+        </div>
+        <div class="middle-right">
+            <div class="middle-section">
+                <div class="story-section" id="storyBar"></div>
+                <div class="content-section" id="contentSection">
+
+                </div>
+            </div>
+            <div id="rightSection" class="right-section">
+
+            </div>
+        </div>
+    </div>
+    <div id="commentDiv" class="comment-div d-none">
+        <div class="overlay">
+            <img class="close" onclick="closeComments()" src="./icon/close.png" alt="">
+            <div id="comments" class="comments">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
